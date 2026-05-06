@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章：習慣化と未来の設計 | 自己変革の教科書</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d1117;--ink-2:#1c2433;--ink-3:#2d3748;--body:#374151;--muted:#6b7280;--faint:#9ca3af;--border:#e5e7eb;--bg:#fafaf8;--bg-2:#f3f4f0;--bg-card:#ffffff;--accent:#78350f;--accent-2:#d97706;--accent-3:#fbbf24;--accent-light:#fffbeb;--green:#065f46;--green-bg:#ecfdf5;--green-border:#10b981;--red:#7f1d1d;--red-bg:#fef2f2;--red-border:#f87171;--blue:#1e3a8a;--blue-bg:#eff6ff;--blue-border:#3b82f6;--serif:'Noto Serif JP',serif;--sans:'Noto Sans JP',sans-serif;--mono:'JetBrains Mono',monospace;--r:6px;--shadow:0 1px 3px rgba(0,0,0,.07),0 4px 16px rgba(0,0,0,.05);--shadow-lg:0 8px 32px rgba(0,0,0,.10);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--body);line-height:1.8;min-height:100vh;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;}
+.nav-brand{font-family:var(--serif);font-weight:700;font-size:.95rem;color:var(--accent);}
+.nav-links{display:flex;gap:1.5rem;}
+.nav-links a{font-size:.8rem;color:var(--muted);text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--accent-2);}
+.hero{margin-top:56px;padding:5rem 2rem 4rem;background:linear-gradient(160deg,#1c0a00 0%,#78350f 50%,#92400e 100%);color:white;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;opacity:.25;background:radial-gradient(ellipse at 50% 20%,rgba(251,191,36,.4) 0%,transparent 60%);}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;}
+.hero-tag{display:inline-block;font-family:var(--mono);font-size:.7rem;background:rgba(217,119,6,.4);border:1px solid rgba(251,191,36,.4);color:#fcd34d;padding:.25rem .75rem;border-radius:100px;margin-bottom:1.25rem;letter-spacing:.1em;}
+.hero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.3;margin-bottom:1rem;}
+.hero h1 span{color:#fcd34d;}
+.hero-sub{font-size:1rem;color:#94a3b8;max-width:560px;line-height:1.7;margin-bottom:2rem;}
+.hero-meta{display:flex;gap:2rem;flex-wrap:wrap;}
+.hero-stat{display:flex;flex-direction:column;gap:.2rem;}
+.hero-stat-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:white;}
+.hero-stat-label{font-size:.72rem;color:#64748b;letter-spacing:.05em;}
+.page{max-width:820px;margin:0 auto;padding:3rem 2rem 6rem;}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-2);border-radius:var(--r);padding:1.5rem 2rem;margin-bottom:3rem;}
+.toc h2{font-family:var(--serif);font-size:.85rem;color:var(--muted);letter-spacing:.1em;margin-bottom:1rem;text-transform:uppercase;}
+.toc ol{list-style:none;counter-reset:toc;}
+.toc li{counter-increment:toc;margin-bottom:.5rem;}
+.toc li::before{content:counter(toc,decimal-leading-zero);font-family:var(--mono);font-size:.7rem;color:var(--accent-3);margin-right:.75rem;}
+.toc a{font-size:.88rem;color:var(--body);text-decoration:none;}
+.toc a:hover{color:var(--accent-2);}
+.section{margin-bottom:4rem;}
+.section-header{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--border);}
+.section-num{font-family:var(--mono);font-size:.75rem;color:var(--accent-3);letter-spacing:.1em;}
+.section-title{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--accent);line-height:1.3;}
+.sub-section{margin-bottom:2.5rem;}
+.sub-title{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--ink-3);margin-bottom:.75rem;padding-left:.75rem;border-left:2px solid var(--accent-3);}
+p{margin-bottom:1rem;font-size:.95rem;line-height:1.9;}
+.box{border-radius:var(--r);padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:.9rem;line-height:1.8;}
+.box-key{background:var(--accent-light);border-left:3px solid var(--accent-2);color:var(--accent);font-weight:500;}
+.box-tip{background:var(--blue-bg);border-left:3px solid var(--blue-border);color:var(--blue);}
+.box-good{background:var(--green-bg);border-left:3px solid var(--green-border);color:var(--green);}
+.box-label{font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:.5rem;opacity:.7;}
+.science-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;margin:1.5rem 0;box-shadow:var(--shadow);}
+.science-card-header{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border);}
+.science-badge{font-family:var(--mono);font-size:.65rem;background:var(--ink);color:white;padding:.2rem .6rem;border-radius:3px;letter-spacing:.08em;text-transform:uppercase;}
+.science-card-title{font-weight:600;font-size:.9rem;color:var(--ink);}
+.science-card p{font-size:.88rem;color:var(--body);}
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.85rem;}
+.data-table th{background:var(--ink);color:white;padding:.6rem 1rem;text-align:left;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;font-weight:400;}
+.data-table td{padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--body);}
+.data-table tr:hover td{background:var(--bg-2);}
+.data-table .hi{color:var(--accent-2);font-weight:600;}
+.data-table .good{color:#059669;font-weight:600;}
+ul.detail{list-style:none;margin:1rem 0;}
+ul.detail li{padding:.4rem 0 .4rem 1.5rem;position:relative;font-size:.9rem;border-bottom:1px solid var(--border);}
+ul.detail li:last-child{border-bottom:none;}
+ul.detail li::before{content:'→';position:absolute;left:0;color:var(--accent-3);font-size:.8rem;top:.45rem;}
+.action-block{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-2) 100%);border-radius:var(--r);padding:1.5rem 2rem;margin:2rem 0;color:white;}
+.action-block-label{font-family:var(--mono);font-size:.65rem;color:#64748b;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.75rem;}
+.action-block h4{font-family:var(--serif);font-size:1rem;color:white;margin-bottom:.75rem;}
+.action-list{list-style:none;}
+.action-list li{padding:.4rem 0;font-size:.85rem;color:#e2e8f0;display:flex;gap:.75rem;align-items:baseline;}
+.action-list li::before{content:'✦';color:#fbbf24;font-size:.65rem;flex-shrink:0;}
+.chapter-nav{display:flex;justify-content:space-between;padding:1.5rem 0;border-top:1px solid var(--border);margin-top:4rem;}
+.chapter-nav a{font-size:.85rem;color:var(--accent-2);text-decoration:none;}
+.chapter-nav a:hover{color:var(--accent);}
+.search-wrap{position:fixed;bottom:2rem;right:2rem;z-index:50;}
+.search-btn{width:48px;height:48px;background:var(--accent);color:white;border:none;border-radius:50%;font-size:1.1rem;cursor:pointer;box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;transition:transform .2s;}
+.search-btn:hover{transform:scale(1.08);}
+.search-panel{display:none;position:fixed;bottom:5.5rem;right:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:1rem;width:280px;box-shadow:var(--shadow-lg);}
+.search-panel.open{display:block;}
+.search-input{width:100%;border:1px solid var(--border);background:var(--bg);border-radius:4px;padding:.5rem .75rem;font-family:var(--sans);font-size:.85rem;outline:none;}
+.search-input:focus{border-color:var(--accent-2);}
+.search-results{margin-top:.75rem;max-height:200px;overflow-y:auto;}
+.search-result-item{padding:.4rem .5rem;border-radius:3px;font-size:.8rem;color:var(--body);cursor:pointer;}
+.search-result-item:hover{background:var(--accent-light);color:var(--accent);}
+.reading-bar{position:fixed;top:56px;left:0;height:2px;background:var(--accent-2);width:0%;z-index:99;}
+/* FINAL CARD */
+.final-card{background:linear-gradient(135deg,var(--ink) 0%,#1e3a5f 100%);border-radius:12px;padding:2.5rem;margin:3rem 0;color:white;text-align:center;}
+.final-card h3{font-family:var(--serif);font-size:1.4rem;color:white;margin-bottom:1rem;}
+.final-card p{color:#94a3b8;font-size:.9rem;max-width:500px;margin:0 auto 1.5rem;}
+.cycle{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;}
+.cycle-step{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;padding:.5rem 1rem;border-radius:100px;font-size:.82rem;}
+.cycle-arrow{color:rgba(255,255,255,.4);}
+.fade-in{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+@media(max-width:640px){.hero{padding:3rem 1.25rem 2.5rem;}.page{padding:2rem 1.25rem 4rem;}.nav-links{gap:.75rem;}nav{padding:0 1.25rem;}}
+</style>
+</head>
+<body>
+<div class="reading-bar" id="readBar"></div>
+<nav>
+  <span class="nav-brand">自己変革の教科書</span>
+  <div class="nav-links">
+    <a href="ch4.html">← 第4章</a>
+    <a href="index.html">目次</a>
+  </div>
+  <span style="font-size:.75rem;color:var(--faint);font-family:var(--mono);">CH.05</span>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">CHAPTER 05 — FINAL</span>
+    <h1>習慣化と<span>未来の設計</span></h1>
+    <p class="hero-sub">規律によって自由を獲得し、セルフイメージを書き換える ── 行動科学・時間神経科学・習慣形成の科学</p>
+    <div class="hero-meta">
+      <div class="hero-stat"><span class="hero-stat-val">66日</span><span class="hero-stat-label">習慣形成に必要な平均日数（Lally et al.）</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">4:00</span><span class="hero-stat-label">コルチゾール覚醒反応の最適化時刻</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">BDNF</span><span class="hero-stat-label">神経可塑性の鍵となる成長因子</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <nav class="toc">
+    <h2>本章の構成</h2>
+    <ol>
+      <li><a href="#s1">朝のプロトコルの神経科学 ── コルチゾール覚醒反応を最大活用する</a></li>
+      <li><a href="#s2">習慣形成の行動科学 ── キューとルーティンとリワードのループ</a></li>
+      <li><a href="#s3">セルフイメージの書き換え ── アッパー撤廃の心理学・神経科学</a></li>
+      <li><a href="#s4">BDNF・運動・認知能力 ── 走ることが脳を変える</a></li>
+      <li><a href="#s5">統合：5章を貫く一本の軸</a></li>
+    </ol>
+  </nav>
+
+  <section class="section fade-in" id="s1">
+    <div class="section-header">
+      <span class="section-num">01 —</span>
+      <h2 class="section-title">朝のプロトコルの神経科学</h2>
+    </div>
+    <p>「4時起床」は単なる精神論ではない。人体の<strong>時間神経科学（クロノバイオロジー）</strong>を最大活用する設計だ。</p>
+    <div class="sub-section">
+      <h3 class="sub-title">コルチゾール覚醒反応（CAR）：1日のOSを起動する</h3>
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Chronobiology</span>
+          <span class="science-card-title">コルチゾール覚醒反応（Cortisol Awakening Response：CAR）</span>
+        </div>
+        <p>覚醒後20〜30分以内にコルチゾールが急上昇する<strong>CAR</strong>は、1日のエネルギー・認知・免疫機能の準備を行う生理的プロセスだ：</p>
+        <ul class="detail">
+          <li>CARの大きさは1日の活力・集中力・感情安定性と正の相関</li>
+          <li><strong>日光暴露（早朝）</strong>はSCN（視交叉上核）を刺激し、CARを最大化する</li>
+          <li><strong>スマホ・SNSの即時チェック</strong>はコルチゾールを慢性的・低レベルで上昇させ、CARの急峻な立ち上がりを阻害する</li>
+          <li>散歩（低強度運動）はCARに続くコルチゾールの適切な低下を促進し、午前中の認知機能を最大化</li>
+        </ul>
+      </div>
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neuroscience</span>
+          <span class="science-card-title">デジタル断食の神経生物学：ドーパミン受容体の感受性回復</span>
+        </div>
+        <p>スマホ・SNSは<strong>可変報酬スケジュール</strong>（ギャンブルと同じ仕組み）でドーパミン系を刺激する。朝一番のスマホチェックは：</p>
+        <ul class="detail">
+          <li>側坐核のドーパミン放出を誘発し、<strong>内発的動機づけ（自分の目標に向かう力）を低下</strong>させる</li>
+          <li>ドーパミン受容体D2/D3の感受性を低下させ、日常の活動から得られる満足感を減らす</li>
+          <li>扁桃体をSNSの感情的コンテンツで即座に活性化し、コルチゾールを早期上昇させる</li>
+        </ul>
+        <p>朝のデジタル断食（最低60〜90分）は、ドーパミン受容体の感受性を回復させ、1日の内発的動機と集中力の基盤を作る。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in" id="s2">
+    <div class="section-header">
+      <span class="section-num">02 —</span>
+      <h2 class="section-title">習慣形成の行動科学</h2>
+    </div>
+    <div class="science-card">
+      <div class="science-card-header">
+        <span class="science-badge">Behavioral Science</span>
+        <span class="science-card-title">習慣形成の3ループモデルとフィリパ・ラリーの研究</span>
+      </div>
+      <p>チャールズ・デュヒッグの「ハビット・ループ」（キュー→ルーティン→リワード）は広く知られているが、<strong>フィリパ・ラリー（UCL、2010年）</strong>の実証研究がより重要な知見を提供している：</p>
+      <ul class="detail">
+        <li>習慣形成にかかる平均日数は<strong>66日</strong>（範囲：18〜254日。「21日習慣説」は誤り）</li>
+        <li>習慣の複雑さによって形成期間が大きく異なる（飲む→21日、運動する→68日、食事制限→254日）</li>
+        <li>1日のスキップは習慣形成に大きな影響を与えない（自己批判より一貫性の方が重要）</li>
+        <li>同じ「キュー」（場所・時間・先行行動）に結びつけることで自動化が加速する</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <h3 class="sub-title">基底核と手続き記憶：習慣の神経基盤</h3>
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neuroscience</span>
+          <span class="science-card-title">習慣の自動化：線条体と基底核のチャンキング</span>
+        </div>
+        <p>習慣が形成されると、行動の制御が前頭前皮質（意識的処理）から<strong>基底核（特に線条体）</strong>に移行する。これを<strong>チャンキング</strong>という。</p>
+        <ul class="detail">
+          <li>新規行動：前頭前皮質が関与し、高いエネルギーコストがかかる</li>
+          <li>習慣化後：基底核が処理し、前頭前皮質のリソースを節約（意志力を消費しない）</li>
+          <li>意志力は前頭前皮質の資源（グルコース・ドーパミン）に依存する有限の資源</li>
+          <li>習慣化することで「意志力なしに行動できる」状態を作ることが、持続可能な変革の鍵</li>
+        </ul>
+        <div class="box box-key" style="margin-top:.75rem;">
+          <span class="box-label">🔑 設計の原則</span>
+          習慣設計の目標は「やる気が出なくてもできる仕組み」を作ること。意志力に依存するルーティンは必ず崩壊する。環境・時間・先行キューを固定することで、前頭前皮質を使わずに行動できる自動化状態を目指す。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in" id="s3">
+    <div class="section-header">
+      <span class="section-num">03 —</span>
+      <h2 class="section-title">セルフイメージの書き換え</h2>
+    </div>
+    <p>「年収4000万レベルの景色を直視する」という手法は、<strong>参照点理論（Reference Point Theory）</strong>と<strong>DMNの自己モデル更新</strong>という二つの神経科学的メカニズムで説明できる。</p>
+    <div class="science-card">
+      <div class="science-card-header">
+        <span class="science-badge">Psychology</span>
+        <span class="science-card-title">参照点理論とセルフイメージの可塑性</span>
+      </div>
+      <p>カーネマンとトベルスキーの<strong>プロスペクト理論</strong>によれば、私たちは絶対値ではなく参照点（比較基準）によって価値を判断する。参照点を引き上げることで：</p>
+      <ul class="detail">
+        <li>現在の状態への「不満足」が行動動機を生む（参照点以下にいる状態）</li>
+        <li>新しい参照点を繰り返し意識することで、DMNの「自己モデル」が更新される</li>
+        <li>同じ環境・同じ情報を「自分はそこに向かっている人間だ」という参照点から処理するようになる</li>
+        <li>これが「環境を変える」「高い基準の人間と会う」ことの神経科学的根拠だ</li>
+      </ul>
+    </div>
+    <div class="box box-tip">
+      <span class="box-label">📌 圭祐への応用</span>
+      「2年目宣言」を人前で言語化し続けることは、DMNの自己モデルを書き換えるプロセスだ。本田圭佑の「先に宣言する」戦略は、神経科学的に正確な自己変革法だ。宣言→認知的不協和→行動→体験→DMN更新、このサイクルを回せ。
+    </div>
+  </section>
+
+  <section class="section fade-in" id="s4">
+    <div class="section-header">
+      <span class="section-num">04 —</span>
+      <h2 class="section-title">BDNF・運動・認知能力</h2>
+    </div>
+    <div class="science-card">
+      <div class="science-card-header">
+        <span class="science-badge">Exercise Neuroscience</span>
+        <span class="science-card-title">BDNF（脳由来神経栄養因子）：脳のBGH</span>
+      </div>
+      <p>ジョン・レイティ（ハーバード大学）が「Brain's Miracle-Gro」と呼ぶ<strong>BDNF</strong>は、運動によって最も強力に誘導される神経栄養因子だ：</p>
+      <ul class="detail">
+        <li>有酸素運動後、海馬のBDNF濃度が<strong>2〜3倍に上昇</strong></li>
+        <li>BDNFは海馬の神経新生（新しいニューロンの誕生）を促進し、記憶・学習能力を直接向上させる</li>
+        <li>高強度インターバル（HIIT）はBDNFを最も強力に誘導する（定常速の有酸素より有効）</li>
+        <li>BDNFはうつ病治療薬と同等の抗うつ効果を持つことがメタ分析で確認されている</li>
+        <li>アルツハイマー病はBDNF低下と関連しており、定期的な運動が最強の予防策となる</li>
+      </ul>
+      <div class="box box-good" style="margin-top:.75rem;">
+        <span class="box-label">✅ 最適プロトコル</span>
+        BDNFを最大化する運動プロトコル：①HIIT（20分・最大心拍数80%以上の区間を含む）→②有酸素（30分中強度）→③直後に認知負荷の高い作業（新しいスキル学習・複雑な思考）。BDNFが高い状態でインプットすると、記憶の固定化が最大化される。
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in" id="s5">
+    <div class="section-header">
+      <span class="section-num">05 —</span>
+      <h2 class="section-title">統合：5章を貫く一本の軸</h2>
+    </div>
+    <p>5章すべては、実は一つの問いへの答えだ：<strong>「なぜ圭祐は、本来のエネルギーを発揮できていないのか。そして、どうすれば取り戻せるのか」</strong></p>
+
+    <div class="final-card">
+      <h3>自己変革の統合サイクル</h3>
+      <p>5章の知識はすべて、このサイクルに収束する</p>
+      <div class="cycle">
+        <span class="cycle-step">身体OSを整える（Ch.1）</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">燃料・物流を最適化（Ch.2）</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">生存戦略を解体（Ch.3）</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">身体知で「今」を掴む（Ch.4）</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">習慣と環境で固定化（Ch.5）</span>
+        <span class="cycle-arrow">→</span>
+        <span class="cycle-step">本来の自分</span>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead><tr><th>章</th><th>問い</th><th>答え</th><th>鍵となる科学</th></tr></thead>
+      <tbody>
+        <tr><td>Ch.1</td><td>なぜ身体が動かないのか</td><td>設計図とのミスマッチ</td><td>進化生物学・ミネラル科学</td></tr>
+        <tr><td>Ch.2</td><td>なぜエネルギーが続かないのか</td><td>燃料と物流の選択ミス</td><td>代謝生化学・ミトコンドリア生物学</td></tr>
+        <tr><td>Ch.3</td><td>なぜ素直に行動できないのか</td><td>5歳に刻まれた神経回路</td><td>発達神経科学・PCM・愛着理論</td></tr>
+        <tr><td>Ch.4</td><td>なぜ「今」に集中できないのか</td><td>予測機械（脳）の暴走</td><td>予測処理理論・内受容感覚・身体知</td></tr>
+        <tr><td>Ch.5</td><td>どうすれば持続できるのか</td><td>基底核への習慣の移行</td><td>習慣形成科学・BDNF・クロノバイオロジー</td></tr>
+      </tbody>
+    </table>
+
+    <div class="action-block">
+      <div class="action-block-label">▸ 最終統合　実践プロトコル</div>
+      <h4>「本来の自分」を取り戻す1週間プロトコル</h4>
+      <ul class="action-list">
+        <li>【毎朝】4〜5時起床 → 日光浴10分 → 海塩水 → 散歩30分（スマホなし）</li>
+        <li>【毎朝】散歩後：今日「素直に出す」ことを1つ決めて声に出す</li>
+        <li>【毎日】HIIT or 高強度運動20分 → 直後に最重要インプット</li>
+        <li>【毎日】コールドシャワー30〜60秒（ノルエピネフリン・ドーパミン起動）</li>
+        <li>【毎晩】「今日素直に出した体験」を1行書く（神経回路の再固定化）</li>
+        <li>【毎週】1回16:8断食（金曜夜〜土曜昼）でオートファジー・代謝リセット</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="chapter-nav">
+    <a href="ch4.html">← 第4章：身体知と「今」を生きる技術</a>
+    <a href="index.html">目次に戻る →</a>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <div class="search-panel" id="searchPanel">
+    <input class="search-input" id="searchInput" placeholder="キーワード検索..." autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+  <button class="search-btn" id="searchBtn">🔍</button>
+</div>
+
+<script>
+const bar=document.getElementById('readBar');
+window.addEventListener('scroll',()=>{const p=document.documentElement;bar.style.width=(p.scrollTop/(p.scrollHeight-p.clientHeight))*100+'%';});
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+const btn=document.getElementById('searchBtn'),panel=document.getElementById('searchPanel'),input=document.getElementById('searchInput'),results=document.getElementById('searchResults');
+btn.addEventListener('click',()=>{panel.classList.toggle('open');if(panel.classList.contains('open'))input.focus();});
+const idx=Array.from(document.querySelectorAll('.section,.sub-section,.science-card')).map(el=>({el,text:el.textContent,heading:el.querySelector('h2,h3,.science-card-title')?.textContent||''}));
+input.addEventListener('input',()=>{const q=input.value.trim();results.innerHTML='';if(q.length<2)return;idx.filter(i=>i.text.includes(q)).slice(0,8).forEach(hit=>{const d=document.createElement('div');d.className='search-result-item';d.textContent=hit.heading.slice(0,40)||'（本文）';d.addEventListener('click',()=>{hit.el.scrollIntoView({behavior:'smooth',block:'start'});panel.classList.remove('open');input.value='';results.innerHTML='';});results.appendChild(d);});if(!results.children.length)results.innerHTML='<div style="font-size:.8rem;color:var(--muted);padding:.4rem .5rem">見つかりませんでした</div>';});
+document.addEventListener('click',e=>{if(!panel.contains(e.target)&&e.target!==btn)panel.classList.remove('open');});
+</script>
+</body>
+</html>

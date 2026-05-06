@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章：深層心理と生存戦略の解体 | 自己変革の教科書</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d1117;--ink-2:#1c2433;--ink-3:#2d3748;--body:#374151;--muted:#6b7280;--faint:#9ca3af;--border:#e5e7eb;--border-2:#d1d5db;--bg:#fafaf8;--bg-2:#f3f4f0;--bg-card:#ffffff;--accent:#3b1f6b;--accent-2:#7c3aed;--accent-3:#a78bfa;--accent-light:#ede9fe;--gold:#92400e;--gold-bg:#fffbeb;--gold-border:#fbbf24;--green:#065f46;--green-bg:#ecfdf5;--green-border:#10b981;--red:#7f1d1d;--red-bg:#fef2f2;--red-border:#f87171;--serif:'Noto Serif JP',serif;--sans:'Noto Sans JP',sans-serif;--mono:'JetBrains Mono',monospace;--r:6px;--shadow:0 1px 3px rgba(0,0,0,.07),0 4px 16px rgba(0,0,0,.05);--shadow-lg:0 8px 32px rgba(0,0,0,.10);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--bg);color:var(--body);line-height:1.8;min-height:100vh;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;}
+.nav-brand{font-family:var(--serif);font-weight:700;font-size:.95rem;color:var(--accent);}
+.nav-links{display:flex;gap:1.5rem;}
+.nav-links a{font-size:.8rem;color:var(--muted);text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--accent-2);}
+.nav-chapter{font-size:.75rem;color:var(--faint);font-family:var(--mono);}
+.hero{margin-top:56px;padding:5rem 2rem 4rem;background:linear-gradient(160deg,#1a0a3b 0%,#3b1f6b 50%,#4c1d95 100%);color:white;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;opacity:.4;background:radial-gradient(ellipse at 80% 50%,rgba(124,58,237,.3) 0%,transparent 70%);}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;}
+.hero-tag{display:inline-block;font-family:var(--mono);font-size:.7rem;background:rgba(124,58,237,.4);border:1px solid rgba(167,139,250,.4);color:#c4b5fd;padding:.25rem .75rem;border-radius:100px;margin-bottom:1.25rem;letter-spacing:.1em;}
+.hero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.3;margin-bottom:1rem;}
+.hero h1 span{color:#c4b5fd;}
+.hero-sub{font-size:1rem;color:#94a3b8;max-width:560px;line-height:1.7;margin-bottom:2rem;}
+.hero-meta{display:flex;gap:2rem;flex-wrap:wrap;}
+.hero-stat{display:flex;flex-direction:column;gap:.2rem;}
+.hero-stat-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:white;}
+.hero-stat-label{font-size:.72rem;color:#64748b;letter-spacing:.05em;}
+.page{max-width:820px;margin:0 auto;padding:3rem 2rem 6rem;}
+.toc{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-2);border-radius:var(--r);padding:1.5rem 2rem;margin-bottom:3rem;}
+.toc h2{font-family:var(--serif);font-size:.85rem;color:var(--muted);letter-spacing:.1em;margin-bottom:1rem;text-transform:uppercase;}
+.toc ol{list-style:none;counter-reset:toc;}
+.toc li{counter-increment:toc;margin-bottom:.5rem;}
+.toc li::before{content:counter(toc,decimal-leading-zero);font-family:var(--mono);font-size:.7rem;color:var(--accent-3);margin-right:.75rem;}
+.toc a{font-size:.88rem;color:var(--body);text-decoration:none;}
+.toc a:hover{color:var(--accent-2);}
+.section{margin-bottom:4rem;}
+.section-header{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--border);}
+.section-num{font-family:var(--mono);font-size:.75rem;color:var(--accent-3);letter-spacing:.1em;}
+.section-title{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--accent);line-height:1.3;}
+.sub-section{margin-bottom:2.5rem;}
+.sub-title{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--ink-3);margin-bottom:.75rem;padding-left:.75rem;border-left:2px solid var(--accent-3);}
+p{margin-bottom:1rem;font-size:.95rem;line-height:1.9;}
+p:last-child{margin-bottom:0;}
+.box{border-radius:var(--r);padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:.9rem;line-height:1.8;}
+.box-key{background:var(--accent-light);border-left:3px solid var(--accent-2);color:var(--accent);font-weight:500;}
+.box-warn{background:var(--red-bg);border-left:3px solid var(--red-border);color:var(--red);}
+.box-tip{background:var(--gold-bg);border-left:3px solid var(--gold-border);color:var(--gold);}
+.box-good{background:var(--green-bg);border-left:3px solid var(--green-border);color:var(--green);}
+.box-label{font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:.5rem;opacity:.7;}
+.science-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;margin:1.5rem 0;box-shadow:var(--shadow);}
+.science-card-header{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border);}
+.science-badge{font-family:var(--mono);font-size:.65rem;background:var(--ink);color:white;padding:.2rem .6rem;border-radius:3px;letter-spacing:.08em;text-transform:uppercase;}
+.science-card-title{font-weight:600;font-size:.9rem;color:var(--ink);}
+.science-card p{font-size:.88rem;color:var(--body);}
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.85rem;}
+.data-table th{background:var(--ink);color:white;padding:.6rem 1rem;text-align:left;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;font-weight:400;}
+.data-table td{padding:.7rem 1rem;border-bottom:1px solid var(--border);color:var(--body);}
+.data-table tr:hover td{background:var(--bg-2);}
+.data-table .hi{color:var(--accent-2);font-weight:600;}
+.data-table .warn{color:#dc2626;font-weight:600;}
+.data-table .good{color:#059669;font-weight:600;}
+.mechanism{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;margin:1.5rem 0;}
+.mechanism-title{font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;}
+.flow{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem;}
+.flow-step{background:var(--accent-light);border:1px solid var(--accent-3);color:var(--accent);padding:.4rem .9rem;border-radius:100px;font-size:.8rem;font-weight:500;white-space:nowrap;}
+.flow-step.bad{background:var(--red-bg);border-color:var(--red-border);color:var(--red);}
+.flow-step.good{background:var(--green-bg);border-color:var(--green-border);color:var(--green);}
+.flow-arrow{color:var(--faint);font-size:1rem;}
+.pull-quote{margin:2rem 0;padding:1.5rem 2rem;border-left:3px solid var(--accent-2);background:var(--bg-2);font-family:var(--serif);font-size:1.05rem;color:var(--ink-3);font-style:italic;line-height:1.7;}
+.pull-quote cite{display:block;margin-top:.75rem;font-family:var(--mono);font-size:.72rem;color:var(--muted);font-style:normal;letter-spacing:.05em;}
+ul.detail{list-style:none;margin:1rem 0;}
+ul.detail li{padding:.4rem 0 .4rem 1.5rem;position:relative;font-size:.9rem;border-bottom:1px solid var(--border);}
+ul.detail li:last-child{border-bottom:none;}
+ul.detail li::before{content:'→';position:absolute;left:0;color:var(--accent-3);font-size:.8rem;top:.45rem;}
+.action-block{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-2) 100%);border-radius:var(--r);padding:1.5rem 2rem;margin:2rem 0;color:white;}
+.action-block-label{font-family:var(--mono);font-size:.65rem;color:#64748b;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.75rem;}
+.action-block h4{font-family:var(--serif);font-size:1rem;color:white;margin-bottom:.75rem;}
+.action-list{list-style:none;}
+.action-list li{padding:.4rem 0;font-size:.85rem;color:#e2e8f0;display:flex;gap:.75rem;align-items:baseline;}
+.action-list li::before{content:'✦';color:#a78bfa;font-size:.65rem;flex-shrink:0;}
+.chapter-nav{display:flex;justify-content:space-between;padding:1.5rem 0;border-top:1px solid var(--border);margin-top:4rem;}
+.chapter-nav a{font-size:.85rem;color:var(--accent-2);text-decoration:none;}
+.chapter-nav a:hover{color:var(--accent);}
+.search-wrap{position:fixed;bottom:2rem;right:2rem;z-index:50;}
+.search-btn{width:48px;height:48px;background:var(--accent);color:white;border:none;border-radius:50%;font-size:1.1rem;cursor:pointer;box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s;}
+.search-btn:hover{transform:scale(1.08);}
+.search-panel{display:none;position:fixed;bottom:5.5rem;right:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:1rem;width:280px;box-shadow:var(--shadow-lg);}
+.search-panel.open{display:block;}
+.search-input{width:100%;border:1px solid var(--border-2);background:var(--bg);border-radius:4px;padding:.5rem .75rem;font-family:var(--sans);font-size:.85rem;color:var(--body);outline:none;}
+.search-input:focus{border-color:var(--accent-2);}
+.search-results{margin-top:.75rem;max-height:200px;overflow-y:auto;}
+.search-result-item{padding:.4rem .5rem;border-radius:3px;font-size:.8rem;color:var(--body);cursor:pointer;}
+.search-result-item:hover{background:var(--accent-light);color:var(--accent);}
+.reading-bar{position:fixed;top:56px;left:0;height:2px;background:var(--accent-2);width:0%;z-index:99;}
+.pcm-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.5rem;margin:.75rem 0;border-left:3px solid var(--accent-2);}
+.pcm-floor{font-family:var(--mono);font-size:.7rem;color:var(--accent-3);letter-spacing:.1em;margin-bottom:.4rem;}
+.pcm-name{font-weight:700;font-size:.95rem;color:var(--accent);margin-bottom:.4rem;}
+.pcm-desc{font-size:.85rem;color:var(--body);}
+.timeline{position:relative;padding-left:2rem;margin:1.5rem 0;}
+.timeline::before{content:'';position:absolute;left:.5rem;top:.5rem;bottom:.5rem;width:2px;background:var(--border);}
+.timeline-item{position:relative;margin-bottom:1.5rem;}
+.timeline-dot{position:absolute;left:-1.6rem;top:.35rem;width:12px;height:12px;border-radius:50%;background:var(--accent-2);border:2px solid white;box-shadow:0 0 0 2px var(--accent-2);}
+.timeline-dot.bad{background:var(--red-border);box-shadow:0 0 0 2px var(--red-border);}
+.timeline-age{font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-bottom:.3rem;}
+.timeline-content{font-size:.88rem;}
+.fade-in{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+@media(max-width:640px){.hero{padding:3rem 1.25rem 2.5rem;}.page{padding:2rem 1.25rem 4rem;}.nav-links{gap:.75rem;}nav{padding:0 1.25rem;}}
+</style>
+</head>
+<body>
+<div class="reading-bar" id="readBar"></div>
+<nav>
+  <span class="nav-brand">自己変革の教科書</span>
+  <div class="nav-links">
+    <a href="ch2.html">← 第2章</a>
+    <a href="index.html">目次</a>
+    <a href="ch4.html">第4章 →</a>
+  </div>
+  <span class="nav-chapter">CH.03</span>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">CHAPTER 03</span>
+    <h1>深層心理と<span>生存戦略</span>の解体</h1>
+    <p class="hero-sub">過去の「愛されるためのルール」を卒業し、本来の自分を解放する ── 神経科学・発達心理学・PCMの統合</p>
+    <div class="hero-meta">
+      <div class="hero-stat"><span class="hero-stat-val">0〜7歳</span><span class="hero-stat-label">信念形成のクリティカル期</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">95%</span><span class="hero-stat-label">無意識が行動を決定する比率</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">HPA軸</span><span class="hero-stat-label">幼少期トラウマの物理的刻印</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <nav class="toc">
+    <h2>本章の構成</h2>
+    <ol>
+      <li><a href="#s1">信念形成の神経科学 ── 幼少期の経験はどう脳を配線するか</a></li>
+      <li><a href="#s2">PCMコンドミニアム構造 ── 圭祐の心理的設計図</a></li>
+      <li><a href="#s3">生存戦略の解剖 ── 5歳の転換点と「いい子」プログラム</a></li>
+      <li><a href="#s4">ディストレスのメカニズム ── 仮面と防衛機制の神経生物学</a></li>
+      <li><a href="#s5">自己統合の科学 ── 変革の神経可塑性メカニズム</a></li>
+    </ol>
+  </nav>
+
+  <!-- ===== SECTION 1 ===== -->
+  <section class="section fade-in" id="s1">
+    <div class="section-header">
+      <span class="section-num">01 —</span>
+      <h2 class="section-title">信念形成の神経科学</h2>
+    </div>
+    <p>「信念」は哲学的概念ではなく、神経回路の物理的なパターンだ。幼少期の強烈な体験は、ニューロンの接続パターンとして文字通り脳に刻み込まれる。</p>
+
+    <div class="sub-section">
+      <h3 class="sub-title">ヘッブの法則：「共に発火するニューロンは共に配線される」</h3>
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neuroscience</span>
+          <span class="science-card-title">長期増強（LTP）と記憶の固定化</span>
+        </div>
+        <p>心理学者ドナルド・ヘッブ（1949）が提唱した<strong>「ヘッブの法則」</strong>は、現代神経科学で実証されている。強い感情体験（恐怖・喜び・悲しみ）が伴うとき、関連するニューロン群が同時に発火し、シナプス結合が強化される（<strong>長期増強：LTP</strong>）。</p>
+        <ul class="detail">
+          <li>強い感情時に<strong>扁桃体</strong>が活性化し、ノルエピネフリンを大量放出</li>
+          <li>ノルエピネフリンが<strong>海馬のLTPを促進</strong>し、記憶の固定化を強める</li>
+          <li>幼少期（0〜7歳）はシナプスの密度が最大（「シナプス過剰産生期」）で、この時期の体験が特に深く刻まれる</li>
+          <li>強化されたシナプス回路は、類似状況で自動的に活性化される（<strong>条件反応</strong>）</li>
+        </ul>
+      </div>
+
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Developmental Psychology</span>
+          <span class="science-card-title">脳の発達臨界期（Critical Period）</span>
+        </div>
+        <p>脳の各領域には、外部刺激に特に感受性の高い「臨界期」が存在する：</p>
+        <ul class="detail">
+          <li>感情調節（扁桃体・前頭前皮質）：<strong>0〜3歳</strong>が最重要</li>
+          <li>愛着システム（オキシトシン回路）：<strong>0〜2歳</strong>に基盤形成</li>
+          <li>言語・認知（ウェルニッケ野・ブローカ野）：<strong>0〜7歳</strong></li>
+          <li>自己概念・アイデンティティ：<strong>3〜12歳</strong></li>
+          <li>前頭前皮質（理性・衝動制御）：<strong>25歳まで</strong>発達継続</li>
+        </ul>
+        <p>臨界期の脳は「スポンジ」のように環境を吸収するが、それゆえトラウマ的体験も深く刻まれる。5歳での転換点は、まさにこの最感受性期に当たる。</p>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h3 class="sub-title">幼少期のトラウマとHPA軸の「スクリーニング」</h3>
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neurobiology</span>
+          <span class="science-card-title">ACE（逆境的小児体験）研究とストレス応答システムの変容</span>
+        </div>
+        <p>フェリッティらが主導した<strong>ACE（Adverse Childhood Experiences）研究</strong>（1998年、n=17,337）は、幼少期の逆境体験が成人後の身体・精神健康に与える長期的影響を示した：</p>
+        <ul class="detail">
+          <li>幼少期の反復ストレスは<strong>HPA軸の「閾値」を変化</strong>させる（アロスタティック負荷）</li>
+          <li>コルチゾール受容体の感受性が下がり、ストレスに対して過剰または低反応になる</li>
+          <li>扁桃体が構造的に肥大化し、脅威検出が過敏になる</li>
+          <li>前頭前皮質の発達が抑制され、感情調節能力が低下する</li>
+          <li>これらは脳の構造変化であり、「性格」ではなく<strong>神経生物学的適応</strong>だ</li>
+        </ul>
+      </div>
+
+      <div class="box box-tip">
+        <span class="box-label">📌 圭祐への応用</span>
+        「嫌われたくない」「傷つけたくない」という強烈なブレーキは、意志の弱さではない。5歳の体験でHPA軸とアタッチメントシステムが「これが生存戦略だ」と学習した結果、神経回路として固定化されたものだ。これを変えるには、意志力ではなく<strong>神経可塑性を利用した反復体験</strong>が必要だ。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2 ===== -->
+  <section class="section fade-in" id="s2">
+    <div class="section-header">
+      <span class="section-num">02 —</span>
+      <h2 class="section-title">PCMコンドミニアム構造</h2>
+    </div>
+    <p><strong>PCM（プロセスコミュニケーションモデル）</strong>は、NASA・NASA宇宙飛行士選抜のために開発されたコミュニケーション・パーソナリティ理論だ（テイビ・ケイラー博士、1970年代〜）。6つの人格タイプの構造を「コンドミニアム（集合住宅）」として捉える。</p>
+
+    <div class="sub-section">
+      <h3 class="sub-title">圭祐のコンドミニアム（エネルギー配分）</h3>
+
+      <div class="pcm-card">
+        <div class="pcm-floor">1階 BASE（100%）</div>
+        <div class="pcm-name">パシスター</div>
+        <div class="pcm-desc">信念・価値観で世界を捉える土台。本物志向・献身的。「なぜそれを選ぶか説明できるモノ」を選ぶ美学。<br><strong>神経科学的基盤：</strong>強い価値観処理は前頭前皮質内側部（vmPFC）と後帯状皮質（PCC）に関連。道徳的判断と自己参照処理の中枢。</div>
+      </div>
+      <div class="pcm-card">
+        <div class="pcm-floor">2階（100%）</div>
+        <div class="pcm-name">ハーモナイザー</div>
+        <div class="pcm-desc">思いやり・人間関係を大切にする。「誰かのために」でエネルギーが出る。嫌われたくない・傷つけたくないが行動のブレーキになる。<br><strong>神経科学的基盤：</strong>ミラーニューロンシステム・島皮質（共感処理）・扁桃体の社会的脅威検出が優位。</div>
+      </div>
+      <div class="pcm-card">
+        <div class="pcm-floor">3階（100%）</div>
+        <div class="pcm-name">プロモーター</div>
+        <div class="pcm-desc">即断即決・行動で突破する力。幼少期のやんちゃで自由奔放だった本来の自分の源泉。<br><strong>神経科学的基盤：</strong>腹側線条体のドーパミン報酬回路・前頭前皮質の行動実行システムが強い。</div>
+      </div>
+      <div class="pcm-card" style="border-left-color:var(--gold-border);">
+        <div class="pcm-floor">4階 PHASE（85%）</div>
+        <div class="pcm-name">レベル ← 現在のモチベーション源</div>
+        <div class="pcm-desc">「楽しさ」「遊び心」「好き嫌いの直感」で動く時が最も強い。燃費が悪いので「先遊び」と「こまめな充電」が必要。<br><strong>神経科学的基盤：</strong>側坐核・ドーパミン・エンドカンナビノイド系が優位。内発的動機の中枢。</div>
+      </div>
+
+      <div class="box box-key">
+        <span class="box-label">🔑 構造的課題</span>
+        1階（パシスター）の強い信念を、2階（ハーモナイザー）の「嫌われたくない」が封じ込める悪循環。本物志向の価値判断が、関係性への恐怖によって常にオーバーライドされる。これがモチベーション喪失・意見を出せない・宣言できないすべての根本原因だ。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3 ===== -->
+  <section class="section fade-in" id="s3">
+    <div class="section-header">
+      <span class="section-num">03 —</span>
+      <h2 class="section-title">生存戦略の解剖</h2>
+    </div>
+
+    <div class="sub-section">
+      <h3 class="sub-title">タイムライン：圭祐の信念形成の歴史</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot good"></div>
+          <div class="timeline-age">0〜4歳</div>
+          <div class="timeline-content">自由・やんちゃ・本能のまま。プロモーターとしての本来のエネルギーが全開。前頭前皮質の抑制機能がまだ未発達で、衝動と好奇心のままに動く。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot bad"></div>
+          <div class="timeline-age">5歳【転換点】</div>
+          <div class="timeline-content"><strong>「ありのままの自分では愛されない」</strong>という神経回路が形成される。母親の涙（扁桃体を強烈に刺激）と「優しい人になって」という言葉が、LTPによって固定化。生存に直結するアタッチメント脅威として処理される。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot bad"></div>
+          <div class="timeline-age">5歳〜高校</div>
+          <div class="timeline-content">「いい子」「真面目なリーダー」プログラムの強化。社会的成功（承認）を得るたびにこのプログラムがポジティブ強化される。本来のプロモーターエネルギーは地下に押し込まれる。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot bad"></div>
+          <div class="timeline-age">高校【強化】</div>
+          <div class="timeline-content">幼馴染との別れ。素直な想いを伝えきれずに終わった体験が「素直に出すと失う」というパターンをさらに神経回路レベルで強化。ハーモナイザーの抑制力が最大化する。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-age">現在（23歳）</div>
+          <div class="timeline-content">仕事で意見を出せない・目標を宣言できない・恋愛で好きになることを無意識に止める。同じ神経回路パターンが、職場・恋愛・人生全般で繰り返し再現されている。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h3 class="sub-title">アタッチメント理論：ボウルビィとエインズワース</h3>
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Attachment Theory</span>
+          <span class="science-card-title">愛着スタイルの形成と成人後の行動パターン</span>
+        </div>
+        <p>ジョン・ボウルビィの<strong>アタッチメント理論</strong>と、メアリー・エインズワースの「ストレンジ・シチュエーション法」は、幼少期の愛着体験が成人後の対人関係パターンを決定することを実証した：</p>
+        <table class="data-table">
+          <thead><tr><th>愛着スタイル</th><th>幼少期の体験</th><th>成人後の特徴</th></tr></thead>
+          <tbody>
+            <tr><td class="good">安定型（Secure）</td><td>一貫した温かい応答</td><td>信頼・開示できる・修復力高い</td></tr>
+            <tr><td class="warn">不安型（Anxious）</td><td>不一致な応答・条件付き愛情</td><td>承認欲求高い・見捨てられ恐怖・過剰配慮</td></tr>
+            <tr><td>回避型（Avoidant）</td><td>感情的な拒絶・過度の自立要求</td><td>親密さを避ける・感情を切る</td></tr>
+            <tr><td>混乱型（Disorganized）</td><td>恐怖と安全の混在</td><td>関係の混乱・解離傾向</td></tr>
+          </tbody>
+        </table>
+        <p>5歳の体験パターンは<strong>不安型愛着</strong>の形成に近い。条件付き承認（やんちゃな自分→受け入れられない、優しい自分→受け入れられる）が、現在の「嫌われたくない」ドライバーの神経生物学的基盤となっている。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4 ===== -->
+  <section class="section fade-in" id="s4">
+    <div class="section-header">
+      <span class="section-num">04 —</span>
+      <h2 class="section-title">ディストレスのメカニズム</h2>
+    </div>
+    <p>PCMにおける「ディストレス」は、心理的ニーズが満たされないときに自動的に起動する行動パターンだ。これは神経生物学的に、<strong>HPA軸の活性化→防衛的行動回路の起動</strong>として説明できる。</p>
+
+    <div class="sub-section">
+      <h3 class="sub-title">圭祐のディストレスパターンと神経生物学的解釈</h3>
+
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">PCM × Neuroscience</span>
+          <span class="science-card-title">パシスターのドライバー「完璧にしなければ」</span>
+        </div>
+        <p>自己分析を長々と語り始め、「理屈で自分を守る防衛機制」が作動する状態。<br><strong>神経科学的説明：</strong>前頭前皮質の過活性化による「知的合理化（intellectualization）」。扁桃体の脅威反応を前頭前皮質が認知的に抑制しようとするが、その結果として行動を停止させる。<strong>ドーパミン報酬回路が「正解を見つけるまで動かない」に向かう。</strong></p>
+      </div>
+
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">PCM × Neuroscience</span>
+          <span class="science-card-title">レベルのブレーマー仮面「先送り・言い訳」</span>
+        </div>
+        <p>「まだ早い」「もう少し考えてから」で行動を回避する状態。<br><strong>神経科学的説明：</strong>背側前帯状皮質（dACC）のコンフリクトモニタリングが過活性化。「行動したいドーパミン衝動」と「失敗への恐怖（扁桃体）」が同時に活性化したとき、dACCがシステムをフリーズさせる。これは前頭前皮質のリソースが枯渇したときに特に起きやすい（決断疲労）。</p>
+      </div>
+
+      <div class="mechanism">
+        <div class="mechanism-title">ディストレスの神経回路モデル</div>
+        <div class="flow">
+          <span class="flow-step bad">心理的ニーズ未充足（承認・楽しさの欠乏）</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step bad">扁桃体の脅威検出活性化</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step bad">コルチゾール分泌</span>
+        </div>
+        <div class="flow" style="margin-top:.5rem;">
+          <span class="flow-step bad">前頭前皮質機能低下（思考力・判断力↓）</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step bad">自動的防衛パターン起動（仮面）</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step bad">行動停止・悪循環</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5 ===== -->
+  <section class="section fade-in" id="s5">
+    <div class="section-header">
+      <span class="section-num">05 —</span>
+      <h2 class="section-title">自己統合の科学</h2>
+    </div>
+    <p>神経可塑性（Neuroplasticity）は、脳が経験によって構造・機能を変化させる能力だ。生存戦略を「書き換える」ことは比喩ではなく、<strong>文字通り神経回路を再配線する</strong>プロセスだ。</p>
+
+    <div class="sub-section">
+      <h3 class="sub-title">変革の神経可塑性：3つのメカニズム</h3>
+
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neuroplasticity</span>
+          <span class="science-card-title">① 反復体験による回路の再強化</span>
+        </div>
+        <p>「素直に出しても、失わない」という成功体験を積み重ねることで、新しい神経回路（「素直に出す→安全」）を強化し、古い回路（「素直に出す→失う」）のシナプスを相対的に弱化させる（<strong>長期抑圧：LTD</strong>）。これは<strong>1回のドラマチックな体験より、小さな成功体験の反復</strong>の方が効果的だ。</p>
+      </div>
+
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neuroplasticity</span>
+          <span class="science-card-title">② 記憶の再固定化（Memory Reconsolidation）</span>
+        </div>
+        <p>記憶は想起されるたびに「不安定化」し、再固定化される。この窓を利用して、古い恐怖記憶（5歳の転換点）を新しい感情体験とともに再固定化することで、記憶に伴う恐怖反応を低下させることができる（Nader et al., Nature, 2000）。これが<strong>体験的アプローチ（コーチング・身体療法）が認知療法より深く機能する</strong>理由の一つだ。</p>
+      </div>
+
+      <div class="science-card">
+        <div class="science-card-header">
+          <span class="science-badge">Neuroplasticity</span>
+          <span class="science-card-title">③ デフォルトモードネットワーク（DMN）の再構成</span>
+        </div>
+        <p>自己概念・反芻・将来の想像を担う<strong>デフォルトモードネットワーク（DMN）</strong>は、自己アイデンティティの神経基盤だ。マインドフルネス・身体的実践（走る・サウナ）・内省により、DMNの活動パターンを変化させ、「真面目な自分」という固定した自己像を解体・再構築できる。</p>
+      </div>
+    </div>
+
+    <div class="pull-quote">
+      「生存戦略は過去の賢い適応だった。問題は、その戦略が現代の圭祐に対してもなお自動的に起動していることだ。脳は変えられる。ただし、意志力ではなく、身体を通じた反復体験によって。」
+      <cite>— 本章の核心（神経可塑性研究を踏まえて）</cite>
+    </div>
+
+    <div class="action-block">
+      <div class="action-block-label">▸ 第3章　実践チェックリスト</div>
+      <h4>生存戦略の解体と再統合：今週から始める行動</h4>
+      <ul class="action-list">
+        <li>職場で「自分の意見を1日1回、最初の3秒で言語化して口に出す」練習を繰り返す（小さなLTP蓄積）</li>
+        <li>ディストレスのサインに気づいたとき、「今、〇〇仮面が出ている」と自覚するだけでよい（メタ認知は扁桃体反応を緩和する）</li>
+        <li>1週間に1回、「素直に出した→失わなかった」体験を日記に書く（再固定化の促進）</li>
+        <li>ランニング・サウナ後の身体が開いた状態で、感じていることを言語化する習慣を作る（DMN再構成）</li>
+        <li>恋愛・人間関係で「頭の声（ブレーキ）」より先に「身体の感覚（直感）」を言葉にする実験を1回やってみる</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="chapter-nav">
+    <a href="ch2.html">← 第2章：体内インフラ</a>
+    <a href="ch4.html">第4章：身体知と「今」を生きる技術 →</a>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <div class="search-panel" id="searchPanel">
+    <input class="search-input" id="searchInput" placeholder="キーワード検索..." autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+  <button class="search-btn" id="searchBtn">🔍</button>
+</div>
+
+<script>
+const bar=document.getElementById('readBar');
+window.addEventListener('scroll',()=>{const p=document.documentElement;bar.style.width=(p.scrollTop/(p.scrollHeight-p.clientHeight))*100+'%';});
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+const btn=document.getElementById('searchBtn'),panel=document.getElementById('searchPanel'),input=document.getElementById('searchInput'),results=document.getElementById('searchResults');
+btn.addEventListener('click',()=>{panel.classList.toggle('open');if(panel.classList.contains('open'))input.focus();});
+const idx=Array.from(document.querySelectorAll('.section,.sub-section,.science-card')).map(el=>({el,text:el.textContent,heading:el.querySelector('h2,h3,.science-card-title')?.textContent||''}));
+input.addEventListener('input',()=>{const q=input.value.trim();results.innerHTML='';if(q.length<2)return;idx.filter(i=>i.text.includes(q)).slice(0,8).forEach(hit=>{const d=document.createElement('div');d.className='search-result-item';d.textContent=hit.heading.slice(0,40)||'（本文）';d.addEventListener('click',()=>{hit.el.scrollIntoView({behavior:'smooth',block:'start'});panel.classList.remove('open');input.value='';results.innerHTML='';});results.appendChild(d);});if(!results.children.length)results.innerHTML='<div style="font-size:.8rem;color:var(--muted);padding:.4rem .5rem">見つかりませんでした</div>';});
+document.addEventListener('click',e=>{if(!panel.contains(e.target)&&e.target!==btn)panel.classList.remove('open');});
+</script>
+</body>
+</html>
